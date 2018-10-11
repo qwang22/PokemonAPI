@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PokemonAPI Homepage</title>
+    <meta charset="utf-8" />
+    <script src="jquery-3.2.1.js"></script>
+    <script src="../d3/c3-0.6.8/c3-0.6.8/c3.min.js"></script>
+    <script src="../d3/d3.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="index.css" >
+    <link rel="stylesheet" href="../d3/c3-0.6.8/c3-0.6.8/c3.min.css">
+</head>
+<body>
+<div class="div1">
+    <div class="header">
+        <img id="logo" src="https://pokeapi.co/static/logo-6221638601ef7fa7c835eae08ef67a16.png" alt="logo"/>
+    </div>
+    <h2>Search Pokemon </h2>
+    <form id="searchForm" method="GET"> Enter pokemon name or number:
+        <input type="text" id="pokemonName" placeholder="Pokemon name or number" />
+        <input type="submit" value="Submit"/>
+    </form> <br/>
+    
+    <h2>Compare Pokemon</h2>
+    <form id="compareForm" method"GET">
+        <input type="text" id="pokemonName1" placeholder="Pokemon 1" /> vs.
+        <input type="text" id="pokemonName2" placeholder="Pokemon 2" />
+        <input type="submit" value="Submit" />
+    </form>
+
+    <div class="result" style="display: block;">
+        <div id="pokemon_image"></div><br/>
+        <div id="chart"></div>
+    </div> <br/>
+    <button id="resetButton">Reset</button> <br />
+</div>
+</body>
+
+</html>
